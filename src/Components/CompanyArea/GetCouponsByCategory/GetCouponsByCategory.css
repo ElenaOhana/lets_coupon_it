@@ -1,0 +1,14 @@
+.GetCouponsByCategory .Box{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px 10px;
+    background-color: cornsilk;
+    color: peru;
+    padding: 5px;
+    box-shadow: 2px;
+    
+	margin-bottom:8px;
+    display:inline-block;
+    height:auto;
+    overflow-wrap: break-word;
+}

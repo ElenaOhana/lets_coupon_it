@@ -1,0 +1,34 @@
+.AddCustomer {
+    text-align: center;
+    height: 100%;
+    background: linear-gradient(to right, rgb(230, 205, 173), rgb(226, 220, 140));
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.AddCustomer .Box2{
+    position: inherit;
+    margin: 8px;
+    padding-bottom: 10px;
+}
+
+.AddCustomer > .parent >.child{
+    text-align: center;
+    margin-top: 40px;
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px rgb(143, 141, 141);
+}
+
+.AddCustomer span{
+    color:rgb(212, 45, 16);
+    font-weight: bold;
+}
+
+.AddCustomer input{    
+    width: 450px;
+}
+
+.AddCustomer > .Box2 > form  button{    
+    height: 40px;
+    width: 50%;
+ }

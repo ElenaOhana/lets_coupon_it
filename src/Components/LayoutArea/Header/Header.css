@@ -1,0 +1,52 @@
+.Header {
+    text-shadow: 2px 2px 2px rgb(143, 141, 141);
+}
+
+.Header button {
+  background-color: #2a6d54;
+  border-radius: 10px 10px;
+  color: white;
+  padding: 14px 80px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  /* width: 15%; */
+  /* text-align: center; */
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .Header .Blessing{
+    font-size: large;
+    margin-left: 0.4rem;
+    position: relative;
+    bottom: 0.1rem;
+  }
+  .Header .Title{
+    position: relative;
+    left: 19rem;
+    font-size: x-large;
+  }
+  .Header .Title1{
+    position: relative;
+    left: 19rem;
+    font-size: x-large;
+  }
+  .Header .Logout{
+    position: relative;
+    left: 37rem;
+    bottom: 0.4rem;
+  }
+
+  .Header .Login{
+    position: relative;
+    left: 48rem;
+    bottom: 0.4rem;
+  }
+
+  .Header span{
+    display: inline-block;
+    
+  }

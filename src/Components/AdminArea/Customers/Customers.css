@@ -1,0 +1,26 @@
+.Customers {
+	
+}
+
+.Customers table{
+    margin: auto;
+    color: #0C4271;
+}
+
+.Customers table, th, td {
+    border: 1px solid rgb(43, 35, 35);
+}
+
+.Customers th { 
+    background: #F47C7C;
+    border: 1px solid rgb(43, 35, 35);
+}
+
+.Customers 
+tr:nth-child(odd){
+    background-color: #EF9F9F;
+}
+
+.Customers tr:nth-child(even){ /* For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows: */
+    background-color: #FAD4D4;
+}

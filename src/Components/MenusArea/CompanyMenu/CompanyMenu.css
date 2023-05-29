@@ -1,0 +1,72 @@
+.CompanyMenu {
+	height: 100%;
+    background: linear-gradient(to right, rgb(230, 205, 173), rgb(226, 220, 140));
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.CompanyMenu .ContainerDetailsAndPrice{
+    display: inline-flex;
+   /*  display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   /*  justify-content: space-around; */
+    align-content: center;
+    align-items: center;
+   /*  align-items: flex-start; */
+}
+
+.CompanyMenu .ContainerDetailsAndPrice .ContainerCompanyDetails .Box{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px 10px;
+    background-color: cornsilk;
+    color: peru;
+    padding: 8px;
+    box-shadow: 2px 2px 2px rgb(114, 104, 104);
+    overflow-wrap: break-word;
+    display:inline-block;
+}
+
+.CompanyMenu .ContainerDetailsAndPrice .ContainerMaxPrice .Box{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px 10px;
+    background-color: cornsilk;
+    color: peru;
+    padding:35px;
+    box-shadow: 2px 2px 2px rgb(114, 104, 104);
+    display:inline-block;
+}
+
+.CompanyMenu table{
+    margin: auto;
+    color: #0C4271;
+}
+
+.CompanyMenu table, th, td {
+    border: 1.5px solid rgb(8, 1, 1);
+}
+
+.CompanyMenu th { /* Table Header */
+    background: #F47C7C /* rgb(161, 70, 101) */;
+}
+
+.CompanyMenu 
+tr:nth-child(odd){
+    background-color: #f1b9b9;
+}
+
+.CompanyMenu tr:nth-child(even){ /* For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows: */
+    background-color: #FAD4D4;
+}
+
+.CompanyMenu > .parent >.child{
+    text-align: center;
+    margin-top: 40px;
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px rgb(143, 141, 141);
+}
+

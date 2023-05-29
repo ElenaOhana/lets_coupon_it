@@ -1,0 +1,33 @@
+.Companies {
+	
+}
+
+.Companies table{
+    margin: auto;
+    color: #0C4271;
+}
+
+.Companies table, th, td {
+    border: 1px solid rgb(43, 35, 35);
+}
+
+.Companies th { 
+    background: #F47C7C;
+    border: 1px solid rgb(43, 35, 35);
+}
+
+.Companies 
+tr:nth-child(odd){
+    background-color: #EF9F9F;
+}
+
+.Companies tr:nth-child(even){ /* For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows: */
+    background-color: #FAD4D4;
+}
+
+.AdminMenu > .parent >.child{
+    text-align: center;
+    margin-top: 40px;
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px rgb(143, 141, 141);
+}

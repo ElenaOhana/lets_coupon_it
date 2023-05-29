@@ -1,0 +1,16 @@
+.getCustomerCouponsByCategory {
+    height: 100%;
+  
+}
+
+.getCustomerCouponsByCategory .CouponsByCategoryContainer{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px 10px;
+    background-color: cornsilk;
+    color: peru;
+    padding: 8px;
+    box-shadow: 2px 2px 2px rgb(114, 104, 104);
+   /*  overflow-wrap: break-word; */
+   /*  display:inline-block; */
+}

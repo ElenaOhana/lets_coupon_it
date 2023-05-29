@@ -1,0 +1,38 @@
+.GetCouponsByMaxPrice {
+	height: 100%;
+    background: linear-gradient(to right, rgb(230, 205, 173), rgb(226, 220, 140));
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+.GetCouponsByMaxPrice table{
+    margin: auto;
+    color: #0C4271;
+}
+
+.GetCouponsByMaxPrice table, th, td {
+    border: 1.5px solid rgb(8, 1, 1);
+}
+
+.GetCouponsByMaxPrice th { /* Table Header */
+    background: #F47C7C /* rgb(161, 70, 101) */;
+}
+
+.GetCouponsByMaxPrice 
+tr:nth-child(odd){
+    background-color: #f1b9b9;
+}
+
+.GetCouponsByMaxPrice tr:nth-child(even){ /* For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows: */
+    background-color: #FAD4D4;
+}
+
+.GetCouponsByMaxPrice > .parent >.child{
+    text-align: center;
+    margin-top: 40px;
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px rgb(143, 141, 141);
+}
+

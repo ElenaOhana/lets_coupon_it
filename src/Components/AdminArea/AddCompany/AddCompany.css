@@ -1,0 +1,28 @@
+.AddCompany {
+	margin: 5px;
+}
+
+.AddCompany > .parent >.child{
+    text-align: center;
+    margin-top: 40px;
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px rgb(143, 141, 141);
+}
+
+.AddCompany span{
+    color:rgb(212, 45, 16);
+    font-weight: bold;
+}
+
+.AddCompany input{    
+    width: 450px;
+}
+
+.AddCompany > form  #button{    
+    height: 40px;
+ }
+
+ .AddCompany > form  button{    
+    height: 40px;
+    width: 50%;
+ }
