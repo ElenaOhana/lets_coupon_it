@@ -10,6 +10,7 @@ class AdministratorService {
   }
 
   public async getCompany(companyId: number){
+    // eslint-disable-next-line
     const response = axios.get<CompanyModel>(appConfig.adminUrl + "company/"+ `${companyId}`);
     return (await response).data;
   }

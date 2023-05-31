@@ -13,6 +13,7 @@ class CompanyService{
 
     // by id ??
     public async getOneCoupon(couponId: number){ // by id ??
+        // eslint-disable-next-line
         const response = axios.get<CouponModel>(appConfig.companyUrl + "coupon/"+`${couponId}`);
         return (await response).data;
     }
@@ -38,33 +39,39 @@ class CompanyService{
 
 
     public async updateCoupon(couponId: number, coupon: CouponModel){
+        // eslint-disable-next-line
         const response = axios.put<number>(appConfig.companyUrl +"coupon/"+ `${couponId}`, coupon);
         return (await response).data;
     }
 
     public async deleteCouponById(couponId: number){
+        // eslint-disable-next-line
         const response = axios.delete<number>(appConfig.companyUrl + "coupon/"+`${couponId}`);
         return (await response).data;
     }
 
     public async getCompanyDetails(){
+        // eslint-disable-next-line
         const response = axios.get<CompanyModel>(appConfig.companyUrl + "details");
         return (await response).data;
     }
 
     public async getCompanyCouponsByCategory(category: CategoryModel){
         console.log({data:category});
+        // eslint-disable-next-line
         const response = axios.get<CouponModel[]>(appConfig.companyUrl + "category", /* {'id': category.id, "name": category.name} */);// ?? {data:category} Does not build properly object
         //const response = axios.get<CouponModel[]>(appConfig.companyUrl + "category", category);// Does not compile
         return (await response).data;
     }
 
      public async getCompanyCouponsByCategoryId(categoryId: number) { // find by name 
+        // eslint-disable-next-line
         const response = axios.get<CouponModel[]>(appConfig.companyUrl + "category/"+`${categoryId}`);
         return (await response).data;
     }
 
     public async getMaxPriceOfCouponsOfCompany(){
+        
         const response = axios.get<number>(appConfig.companyUrl + "max_price");
         return (await response).data;
     }
@@ -76,6 +83,7 @@ class CompanyService{
     
     //ENUM CouponStatus Required !!
     public async getCompanyCouponsByCategoryAndStatus(category: CategoryModel, couponStatus: CouponStatus){
+        // eslint-disable-next-line
         const response = axios.get<CouponModel[]>(appConfig.companyUrl + "category-and-couponStatus" + `${couponStatus}`, {data:category});
         return (await response).data;
     }
