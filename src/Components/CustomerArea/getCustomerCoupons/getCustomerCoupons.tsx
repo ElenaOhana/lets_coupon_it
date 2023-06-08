@@ -27,7 +27,8 @@ function GetCustomerCoupons(): JSX.Element {
 
     return (
         <div className="getCustomerCoupons">
-            {user?.clientType === 'CUSTOMER' && customerPurchases ?
+          {/*   {user?.clientType === 'CUSTOMER' && customerPurchases ? */}
+            {user?.clientType.toString() === 'CUSTOMER' && customerPurchases ?
                 <>
                     <h1>{user.firstName + " " + user.lastName + ", "}your Purchases are here:</h1>
                     <Container>

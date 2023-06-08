@@ -61,7 +61,8 @@ function AddCustomerPurchase(): JSX.Element {
 
     return (
         <div className="AddCustomerPurchase">
-            {user?.clientType === 'CUSTOMER' && coupon && customer?
+          {/*   {user?.clientType === 'CUSTOMER' && coupon && customer? */}
+            {user?.clientType.toString() === 'CUSTOMER' && coupon && customer?
                 <>
                     <h2>AddCustomerPurchase</h2>
                     <div className="ContainerCouponAndCustomer">

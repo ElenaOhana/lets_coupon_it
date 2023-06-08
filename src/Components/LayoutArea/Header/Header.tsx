@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { UserModel } from "../../../Models/UserModel";
 import { authStore } from "../../../Redux/AuthState";
-import loginService from "../../../Services/LoginService";
 import BaseModalWrapper from "../../HomeArea/ModalPopup/BaseModalWrapper";
 import Blessing from "../Blessing/Blessing";
+import authService from "../../../Services/AuthService";
 import "./Header.css";
+import Register from "../../HomeArea/Register/Register";
 
 function Header(): JSX.Element {
 
@@ -14,7 +15,7 @@ function Header(): JSX.Element {
         setIsModalVisible(wasModalVisible => !wasModalVisible)
     }
 
-const [user, setUser] = useState<UserModel>();
+    const [user, setUser] = useState<UserModel>();
 
 useEffect(() => {
     setUser(authStore.getState().user);
@@ -26,8 +27,9 @@ useEffect(() => {
 
 
 function logout(){
-    loginService.logout();
+    authService.logout();
 }
+
 return (
         <div className="Header">
             <>
@@ -39,10 +41,15 @@ return (
                         <span className="Title1">
                             <h2>Lets coupon it..</h2>
                         </span>
-                        <span className="Login">
-                            <Link to={"/login"}><button onClick={toggleModal}>Login here</button>
-                            <BaseModalWrapper isModalVisible={isModalVisible} onBackdropClick={toggleModal}/></Link>
-                        </span>
+                        <div className="Auth">
+                            <span className="Login">
+                                <Link to={"/login"}><button onClick={toggleModal}>Login here</button>
+                                <BaseModalWrapper isModalVisible={isModalVisible} onBackdropClick={toggleModal}/></Link>
+                            </span>
+                            <span className="Register">
+                                <Link to={"/register"}><button>SignUp</button></Link>
+                            </span>
+                        </div>
                         </>
                     }
                     { user &&

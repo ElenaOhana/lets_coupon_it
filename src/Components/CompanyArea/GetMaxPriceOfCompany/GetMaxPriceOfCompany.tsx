@@ -10,7 +10,7 @@ function GetMaxPriceOfCompany(): JSX.Element {
     useEffect(()=>{
           companyService.getMaxPriceOfCouponsOfCompany()
           .then((max_price)=>setMax_price(max_price))
-          .catch((err=> notificationService.error(err))
+          .catch((err=> {/* notificationService.error(err);  */console.log("max_price from promise error: ", max_price)} )
     )},[])
 
     return (

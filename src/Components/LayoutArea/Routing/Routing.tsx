@@ -18,6 +18,7 @@ import GetCouponsByMaxPrice from "../../CompanyArea/GetCouponsByMaxPrice/GetCoup
 import AddCustomerPurchase from "../../CustomerArea/AddCustomerPurchase/AddCustomerPurchase";
 import GetCustomerCoupons from "../../CustomerArea/getCustomerCoupons/getCustomerCoupons";
 import GetCustomerCouponsByMaxPrice from "../../CustomerArea/getCustomerCouponsByMaxPrice/getCustomerCouponsByMaxPrice";
+import Register from "../../HomeArea/Register/Register";
 
 function Routing(): JSX.Element {
     return (
@@ -28,6 +29,7 @@ function Routing(): JSX.Element {
                 <Route path ="/details/:couponId" element={<CouponDetails/>}/>
 
                 <Route path ="/login" element={<Login/>}/>
+                <Route path ="/register" element={<Register/>}/>
 
                 <Route path ="/adminMenu" element={<AdminMenu/>}/>
                 <Route path ="/customerMenu" element={<CustomerMenu/>}/>

@@ -43,7 +43,8 @@ function UpdateCustomer(): JSX.Element {
 
     return (
         <div className="UpdateCustomer Box2">
-            { (user?.clientType==='ADMINISTRATOR' && customer) ? 
+           {/*  { (user?.clientType==='ADMINISTRATOR' && customer) ?  */}
+            { (user?.clientType.toString( )==='ADMINISTRATOR' && customer) ? 
             <>
 			<h2>Update Customer</h2>
 			<form onSubmit={handleSubmit(send)}>

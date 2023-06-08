@@ -37,7 +37,8 @@ function AddCompany(): JSX.Element {
 
     return (
         <div className="AddCompany Box2">
-             { user?.clientType==='ADMINISTRATOR' ? 
+           {/*  { user?.clientType==='ADMINISTRATOR' ?  */}
+            { user?.clientType.toString() ==='ADMINISTRATOR' ? 
             <>
 			<h2>Add New Company</h2>
 			<form onSubmit={handleSubmit(send)}>
@@ -55,10 +56,10 @@ function AddCompany(): JSX.Element {
                 <br/><br/>
 
                 <TextField className="Input" label="password" type="password" variant="outlined" {...register("password", { 
-                     required: { value: true, message: 'Password is missing' }, 
-                     minLength:{ value: 4, message: 'At least 4 characters' }, 
-                     maxLength: { value: 8, message: 'Your password is too long' }})}/><br/>
-                 <span>{errors.password?.message}</span>
+                    required: { value: true, message: 'Password is missing' }, 
+                    minLength:{ value: 4, message: 'At least 4 characters' }, 
+                    maxLength: { value: 8, message: 'Your password is too long' }})}/><br/>
+                <span>{errors.password?.message}</span>
                 <br/><br/>
 
                 <TextField className="Input" label="Client status" type="clientStatus" {...register("clientStatus")}/><br/><br/>

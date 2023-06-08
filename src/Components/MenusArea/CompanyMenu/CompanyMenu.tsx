@@ -40,7 +40,7 @@ function CompanyMenu(): JSX.Element {
 
     return (
       <div className="CompanyMenu">
-        {  (user?.clientType ==='COMPANY')? 
+        {  (user?.clientType.toString() ==='COMPANY')? 
         <>
 			  <h1>CompanyMenu</h1>
         <div className="ContainerDetailsAndPrice">

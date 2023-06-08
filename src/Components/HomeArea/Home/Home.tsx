@@ -37,21 +37,3 @@ function Home(): JSX.Element {
 
 export default Home;
 
-
-
-
-//const[user, setUser] = useState<typeof getRightUser>();
-/*   function getRightUser(): any{
-    const storedToken = localStorage.getItem("token");
-    const objectUser: any = {...jwtDecode(storedToken)};
-    if(objectUser.clientType == "ADMINISTRATOR"){
-        return {objectUser: AdministratorModel}
-    }
-    if(objectUser.clientType == "COMPANY"){
-        return {objectUser: CompanyModel}
-    }
-    if(objectUser.clientType == "CUSTOMER"){
-        return {objectUser: CustomerModel}
-    }
-    return objectUser;
-} */

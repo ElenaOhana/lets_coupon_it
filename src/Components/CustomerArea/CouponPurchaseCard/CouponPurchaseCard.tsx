@@ -25,7 +25,8 @@ function CouponPurchaseCard(property: customerPurchaseProps): JSX.Element {
 
     return (
         <div className="CouponCardForCustomer">
-            {user?.clientType ==='CUSTOMER' ?<>
+           {/*  {user?.clientType ==='CUSTOMER' ?<> */}
+            {user?.clientType.toString() ==='CUSTOMER' ?<>
 			 <Card elevation={16} sx={{ maxWidth: 500 }}>
                 <CardHeader
                     title={property.customerPurchase.couponTitle+", price: "+ property.customerPurchase.coupon.price+"₪"}

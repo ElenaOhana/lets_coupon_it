@@ -28,9 +28,9 @@ function Blessing(props: UserProps): JSX.Element {
             </>
             {
                 user.clientType ? <>
-            {user.clientType === "ADMINISTRATOR" ? 'Administrator' 
-            : user.clientType === "COMPANY" ? authStore.getState().user.name
-            : user.clientType === "CUSTOMER" ? authStore.getState().user.firstName +" "+authStore.getState().user.lastName : 'unknown'}
+            {user.clientType.toString() === "ADMINISTRATOR" ? 'Administrator' 
+            : user.clientType.toString() === "COMPANY" ? authStore.getState().user.name
+            : user.clientType.toString() === "CUSTOMER" ? authStore.getState().user.firstName +" "+authStore.getState().user.lastName : 'unknown'}
     
             </> : <></>
             } 
@@ -58,7 +58,7 @@ function Blessing(props: UserProps): JSX.Element {
     function isNight(): boolean{
         const date = new Date();
         const hour = date.getHours();
-        return hour === 22 || hour === 23 || hour === 24 || hour === 1 || hour === 2;
+        return hour === 22 || hour === 23 || hour === 24 || hour === 1 ;
     }
 
     

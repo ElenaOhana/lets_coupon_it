@@ -21,7 +21,7 @@ useEffect(()=>{
 
     return (
         <div className="AdminMenu">
-            { user?.clientType==='ADMINISTRATOR' ? 
+            { user?.clientType.toString() ==='ADMINISTRATOR' ? 
             <>
             <div className="Box">
             <div className="MenuTitle"><h1>AdminMenu</h1></div>

@@ -22,7 +22,9 @@ class CustomerService{
     }
 
     public async findMaxPriceOfCustomer(){
-        const response = axios.get<number>(appConfig.customerUrl +"max_price_customer");
+
+        const response = axios.get<number|undefined>(appConfig.customerUrl +"max_price_customer");
+        console.log(response);
         return (await response).data;
     }
     

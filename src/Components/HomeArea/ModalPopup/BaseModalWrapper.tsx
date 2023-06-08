@@ -3,10 +3,10 @@ import Modal from './Modal';
 import { DesktopModalContainer, FormSpan, Header } from './ModalPopup.styles';
 import { useNavigate } from "react-router-dom";
 import { CredentialsModel } from "../../../Models/CredentialsModel";
-import loginService from "../../../Services/LoginService";
 import { authStore } from '../../../Redux/AuthState';
 import notificationService from '../../../Services/NotificationService';
 import { useForm } from 'react-hook-form';
+import authService from '../../../Services/AuthService';
 
 interface BaseModalWrapperProps {
     isModalVisible: boolean;
@@ -25,7 +25,7 @@ const BaseModalWrapper: React.FC<BaseModalWrapperProps> = ({ onBackdropClick, is
         return null;
     }
     function send(cred: CredentialsModel) {
-        loginService.login(cred, cred.clientType)
+        authService.login(cred, cred.clientType)
             .then(() => {
                 if (cred.clientType.toString() === "ADMINISTRATOR") {
                     notificationService.success("Hello " + authStore.getState().user.clientType);

@@ -38,7 +38,8 @@ function AddCustomer(): JSX.Element {
     return (
         <div className="AddCustomer ">
         
-            {user?.clientType==='ADMINISTRATOR' ?
+            {/* {user?.clientType==='ADMINISTRATOR' ? */}
+            {user?.clientType.toString() === 'ADMINISTRATOR' ? 
             <>
             <div className="Box2">
 			<h2>Add New Customer</h2>

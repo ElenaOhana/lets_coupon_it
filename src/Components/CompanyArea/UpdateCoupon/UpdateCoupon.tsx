@@ -90,7 +90,8 @@ function UpdateCoupon(): JSX.Element {
 
     return (
         <div className="UpdateCoupon">
-            { (user?.clientType==='COMPANY' && coupon) ? 
+           {/*  { (user?.clientType==='COMPANY' && coupon) ?  */}
+           { (user?.clientType.toString() ==='COMPANY' && coupon) ? 
             <>
             <div className="Box2">
 			<h2>Update Coupon</h2>

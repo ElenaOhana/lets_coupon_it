@@ -40,11 +40,17 @@
     bottom: 0.4rem;
   }
 
-  .Header .Login{
+  .Header .Auth{
     position: relative;
     left: 48rem;
     bottom: 0.4rem;
   }
+
+/*   .Header >.Auth{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+  } */
 
   .Header span{
     display: inline-block;

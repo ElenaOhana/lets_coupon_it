@@ -83,7 +83,8 @@ function AddCoupon(): JSX.Element {
     
     return (
         <div className="AddCoupon">
-            {  user?.clientType==='COMPANY' ?  
+           {/*  {  user?.clientType==='COMPANY' ?   */}
+           {  user?.clientType.toString() ==='COMPANY' ?  
             <>
             <div className="Box2">
 			<h2>Add New Coupon</h2>

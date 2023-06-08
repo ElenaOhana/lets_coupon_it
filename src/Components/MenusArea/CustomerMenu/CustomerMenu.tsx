@@ -29,7 +29,7 @@ function CustomerMenu(): JSX.Element {
 
     return (
         <div className="CustomerMenu">
-            {user?.clientType === 'CUSTOMER' && coupons ?
+            {user?.clientType.toString() === 'CUSTOMER' && coupons ?
                 <>
                     <h1>CustomerMenu</h1>
                     <div className="ContainerDetailsAndPrice">

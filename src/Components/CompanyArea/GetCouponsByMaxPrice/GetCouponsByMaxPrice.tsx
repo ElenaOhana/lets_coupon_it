@@ -28,7 +28,8 @@ function GetCouponsByMaxPrice(): JSX.Element {
 
     return (
         <div className="GetCouponsByMaxPrice">
-            { (user?.clientType==='COMPANY')? 
+          {/*   { (user?.clientType==='COMPANY')?  */}
+            { (user?.clientType.toString() ==='COMPANY')? 
         <>
         <div className ="CouponTable">
 			    <h1>CompanyMenu</h1>
