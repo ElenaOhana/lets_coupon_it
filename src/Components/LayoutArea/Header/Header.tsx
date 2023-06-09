@@ -6,7 +6,6 @@ import BaseModalWrapper from "../../HomeArea/ModalPopup/BaseModalWrapper";
 import Blessing from "../Blessing/Blessing";
 import authService from "../../../Services/AuthService";
 import "./Header.css";
-import Register from "../../HomeArea/Register/Register";
 
 function Header(): JSX.Element {
 

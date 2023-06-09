@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import companyService from "../../../Services/CompanyService";
-import notificationService from "../../../Services/NotificationService";
 import "./GetMaxPriceOfCompany.css";
 
 function GetMaxPriceOfCompany(): JSX.Element {
@@ -11,7 +10,7 @@ function GetMaxPriceOfCompany(): JSX.Element {
           companyService.getMaxPriceOfCouponsOfCompany()
           .then((max_price)=>setMax_price(max_price))
           .catch((err=> {/* notificationService.error(err);  */console.log("max_price from promise error: ", max_price)} )
-    )},[])
+    )},[max_price])
 
     return (
         <div className="GetMaxPriceOfCompany">
